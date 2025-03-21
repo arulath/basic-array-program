@@ -1,0 +1,21 @@
+import java.util.Scanner;
+import java.util.Arrays;
+public class firstlarge {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int[] a = new int[5];
+
+        System.out.println("Enter 5 elements:");
+        for (int i = 0; i < 5; i++) {
+            a[i] = sc.nextInt();
+        }
+
+        Arrays.sort(a);
+
+        int firstLargest = a[4];
+        int secondLargest = a[3];
+
+        System.out.println("First largest element: " + firstLargest);
+        System.out.println("Second largest element: " + secondLargest);
+    }
+}
